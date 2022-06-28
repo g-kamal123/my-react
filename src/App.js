@@ -1,22 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Factorial from './components/factorial';
+import Prime from './components/prime';
+import City from './components/cities';
+import Bname from './components/Bname';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Factorial />
+        <Prime />
+        <City />
+        <Bname />
       </header>
     </div>
   );
