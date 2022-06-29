@@ -18,11 +18,15 @@ let Prime = () => {
 }
 
 var chkprime =(i) => {
+    if(i===2)
+    return 1;
+    if(i===3)
+    return 1;
     if(i%2 === 0)
     return 0;
     if(i%3===0)
     return 0;
-    for(var k=5;k*k<i;k+=6){
+    for(var k=5;k*k<=i;k+=6){
         if(i%k===0)
         return 0;
         if(i%(k+2)===0)

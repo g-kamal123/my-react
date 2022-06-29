@@ -2,6 +2,7 @@ import React from "react";
 
 let City = ()=>{
     var arr =['Agra','Lucknow','kanpur','varanasi','Baroda','Bhaghalpur','Bhuvneshwar','Buxar','Boston','Birmingham'];
+    arr.sort();
     return(
         <ul><h3>Cities....</h3>{
             arr.map((item)=>
